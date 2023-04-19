@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <style>
+        body {
+            background-color: rgb(94, 97, 121);
+            color: white;
+            font: normal 14pt Arial;
+        }
+        mark {
+            background-color: rgb(55, 204, 204);
+        }
+        h1 {
+            color: rgb(236, 188, 83);
+        }
+        h2 {
+            color: rgb(236, 188, 83);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivo diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+
+    </picture>
+    <h1>Reprodusindo Áudio</h1>
+    <p>Vamos aprender a produzir um áudio em HTML
+        <!--
+        <audio src="midia/Just Breathing (Instrumental) - NEFFEX.mp3" controls autoplay></audio> -->
+    <audio preload="metadata" controls loop>
+        <source src="midia/Just Breathing (Instrumental) - NEFFEX.mp3" type="audio/mpeg">
+        <source src="midia/Just Breathing (Instrumental) - NEFFEX.ogg" type="audio/opp">
+        <source src="midia/Just Breathing (Instrumental) - NEFFEX.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue produzir áudio. <a href="midia/Just Breathing (Instrumental) - NEFFEX.mp3">Clique aqui para baixar o arquivo</a></p> 
+    </audio>
+    </p>
+</body>
+</html>
